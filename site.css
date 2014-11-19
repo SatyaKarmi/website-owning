@@ -1,22 +1,25 @@
 #main-content
 {
 	text-align:left;
+	font-family: arial, "Noto Sans";
+	font-size: 17px;
+	line-height:1.5;
 }
 .body-style
 {
-	background-color:#e6e6e6;
+	background-color:#e6e6e6;	
 }
 a.menu-item
 {
 	color: #222;
-	font-size: 12px;
-	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 17px;
+	font-family: "Noto Sans";
 	margin-left: 5px;
 	margin-right: 5px;
 }
 a.menu-item:hover,a.menu-item:active
 {
 	color: #FF9933;
-	font-size: 12px;
-	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 17px;
+	font-family: "Noto Sans";
 }
