@@ -1,7 +1,7 @@
 #main-content
 {
 	text-align:left;
-	font-family: arial, "Noto Sans";
+	font-family: "helvetica neue", arial, "Noto Sans";
 	font-size: 17px;
 	line-height:1.5;
 }
@@ -23,3 +23,4 @@ a.menu-item:hover,a.menu-item:active
 	font-size: 17px;
 	font-family: "Noto Sans";
 }
+
