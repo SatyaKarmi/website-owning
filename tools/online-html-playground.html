@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>How to own, build and maintain a website in better ways!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../site.css">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script>
+		function display(){			
+			var html = $("#pg").val();
+			$("#display").html(html);
+		}
+	</script>
+</head> 
+<body>
+<div>
+<img src="../logo.png" alt="website owning logo"/>
+</div>
+<div>
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.websiteowning.com&amp;layout=standard&amp;show_faces=true&amp;action=like&amp;share=true&amp;colorscheme=light" style="overflow:hidden;width:100%;height:80px;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>
+<hr/>
+<div id="page-container" style="margin:0px auto">
+	<div class="clear">
+		<div id="main-content">
+			<div id="main-menu" style="background-color:a4a4a4">
+				<a href="../index.html" class="menu-item">HOME</a>|
+				<a href="../domain-search.html" class="menu-item">DOMAIN SEARCH</a>|
+				<a href="../website-owning.html" class="menu-item">OWNING</a>|
+				<a href="../website-building.html" class="menu-item">BUILDING</a>|
+				<a href="../website-optimization.html" class="menu-item">OPTIMIZATION</a>|
+				<a href="../website-optimization.html" class="menu-item">SEO</a>|
+				<a href="../website-maintaining.html" class="menu-item">MAINTAINING</a>|
+				<a href="index.html" class="menu-item">TOOLS</a>|
+				<a href="../faq.html" class="menu-item">FAQ</a>
+			</div>
+			<hr/>
+			<h3>Online HTML Play Ground</h3>
+			<div id="display"> </div>
+			<p>Enter your html here:</p>			
+			<textarea name="pg" id="pg" style="width:80%">
+			</textarea>
+			<div style="width:80%;">				
+				<button name="submit" style="float:right;" onclick="display();">submit</button>				
+			</div>
+		</div>
+	</div>
+</div>
