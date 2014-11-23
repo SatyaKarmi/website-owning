@@ -5,9 +5,15 @@
 	font-size: 17px;
 	line-height:1.5;
 }
-.body-style
+.body-content
 {
-	background-color:#e6e6e6;	
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 18px #aaaaaa;
+    color: #000000;
+    height: auto;
+    margin-right: 20px;
+    overflow: hidden;	
 }
 a.menu-item
 {
