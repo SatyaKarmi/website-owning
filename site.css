@@ -9,12 +9,18 @@
 {
 	background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 5px 5px 5px 5px;
-    box-shadow: 0 0 18px #aaaaaa;
+    box-shadow: 0 0 15px #aaaaaa;
     color: #000000;
     height: auto;
-    margin-right: 20px;
-    overflow: hidden;	
+	overflow: hidden;	
 }
+
+.body-cont-inner
+{
+	position:relative;
+	margin-left:10px;
+}
+
 a.menu-item
 {
 	color: #222;
