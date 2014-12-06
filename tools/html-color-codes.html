@@ -3,13 +3,35 @@
 <head>
 	<title>How to own, build and maintain a website in better ways!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="site.css">
+	<link rel="stylesheet" type="text/css" href="../site.css">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script>
+		function componentToHex(c) {
+			var hex = c.toString(16);
+			return hex.length == 1 ? "0" + hex : hex;
+		}
+
+		function rgbToHex(r, g, b) {
+			return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+		}
+		function ConvertToHex(){ 
+			var r = $("#r").val();			
+			var g = $("#g").val();
+			var b = $("#b").val();
+			
+			var hexval = rgbToHex(r, g, b);
+			$("#hex").css('background-color' , hexval);
+
+		}
+	</script>
 </head>
 <body>
 <div>
-<img src="logo.png" alt="website owning logo"/>
+<img src="../logo.png" alt="website owning logo"/>
 </div>
+<div>
 <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.websiteowning.com&amp;layout=standard&amp;show_faces=true&amp;action=like&amp;share=true&amp;colorscheme=light" style="overflow:hidden;width:50%;height:25px;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>
 <hr/>
 <div id="page-container" style="margin:0px auto">
 	<div class="clear">
@@ -27,18 +49,29 @@
 			</div>
 			<hr/>
 			<div id="">
-				<h3>Welcome to Website Owning!</h3>				
-				<p>We have many questions on building a website from scratch or maintaining or thinking how to rank better on search engines like google. The process of owning a website can summurized as follows:</p>
-				<ol type="number">
-					<li>Think of a domain. For example, you may be interested in providing information on social service or you may want to build a website for your community or you may want to build a website for your business needs etc.</li>
-					<li>Choose a domain name. For example, example.com or example.net or example.org etc.</li>
-					<li>Check the availability of your chosen domain name. Else, choose any other domain name.</li>
-					<li>Own the chosen domain name by purchasing your domain name, if it is available for purchase.</li>
-					<li>Choose a hosting provider and purchase hosting service.</li>
-					<li>Start building your website.</li>
-					<li>Maintain your website.</li>
-					<li>Additionally, you can optimize and monetize your website.</li>
-				</ol>
+				<h3>Enter Red, Green and Blue values in the range 0 - 255</h3>				
+				<table>
+				<tr>
+				<td>red:</td>
+				<td>green:</td>
+				<td>blue:</td>
+				<td>
+				</td>
+				</tr>
+				<tr>
+				<td><input type="text" id="r" name="r"></td>
+				<td><input type="text" id="g" name="g"></td>
+				<td><input type="text" id="b" name="b"></td>
+				<td><input type="button" id="tohex" name="tohex" value="Convert" onclick="ConvertToHex();"></input></td>
+				</tr>	
+				<tr>				
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><textarea id="hex" name="hex" col=20 rows=10></textarea></td>
+				</tr>
+				</table>
+				
 			</div>
 		</div>
 		<div>
