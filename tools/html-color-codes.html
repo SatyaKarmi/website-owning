@@ -19,7 +19,7 @@
 			var g = $("#g").val();
 			var b = $("#b").val();
 			
-			var hexval = rgbToHex(r, g, b);
+			var hexval = rgbToHex(r, g, b);alert (hexval);
 			$("#hex").css('background-color' , hexval);
 
 		}
@@ -50,27 +50,17 @@
 			<hr/>
 			<div id="">
 				<h3>Enter Red, Green and Blue values in the range 0 - 255</h3>				
-				<table width="50%">
-				<tr>
-				<td>red:</td>
-				<td>green:</td>
-				<td>blue:</td>
-				<td>
-				</td>
-				</tr>
-				<tr>
-				<td><input type="text" id="r" name="r"></td>
-				<td><input type="text" id="g" name="g"></td>
-				<td><input type="text" id="b" name="b"></td>
-				<td><input type="button" id="tohex" name="tohex" value="Convert" onclick="ConvertToHex();"></input></td>
-				</tr>	
-				<tr>				
-				<td></td>
-				<td></td>
-				<td colspan="2"><textarea id="hex" name="hex" rows="10" style="width:80%;"></textarea></td>
-				</tr>
-				</table>
-				
+				<div style="width:80%">
+				<div style="width:50%">
+				red: <input type="text" id="r" name="r"><br/>
+				green: <input type="text" id="g" name="g"><br/>
+				blue: <input type="text" id="b" name="b">
+				</div>
+				<div>
+				<textarea id="hex" name="hex" col=20 rows=10></textarea>
+				</div>
+				</div>
+				<input type="button" id="tohex" name="tohex" value="Convert" onclick="ConvertToHex();"></input>
 			</div>
 		</div>
 		<div>
